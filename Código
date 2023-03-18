@@ -1,0 +1,25 @@
+package ejer.pkg22.act2;
+import java.util.Scanner;
+public class Ejer22Act2 {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        double sal_mes, horas_trab, sal_hora;
+        String nombre;
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.print("Nombres: ");
+        nombre = teclado.nextLine();
+        System.out.println("Salario basico por hora: ");
+        sal_hora = teclado.nextDouble();
+        System.out.println("Numero de hora trabajadas por mes: ");
+        horas_trab = teclado.nextDouble();
+        sal_mes = sal_hora*horas_trab;
+        if (sal_mes > 450000){
+            System.out.println("Nombre: " + nombre);
+            System.out.println("Salario mensual: " + sal_mes);
+        }else{
+            System.out.println("Nombre: " + nombre);
+        }
+    }
+    
+}
